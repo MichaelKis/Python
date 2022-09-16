@@ -9,7 +9,7 @@ file.close()
 
 count = 0  # "счетчик для заголовка"
 
-for num in range(1456, 1458):
+for num in range(891, 1460):
 
     url = f'https://www.stoloto.ru/ruslotto/archive/{num}'
     r = requests.get(url)
