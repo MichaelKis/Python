@@ -7,18 +7,18 @@ df = pd.DataFrame(data)
 
 del df['Number']
 
-a = df[['1','2','3','4','5']]
-
-df['new_column'] = df['1'] + df['2']
+a = df[['1','2']].value_counts()
 
 
-#
-# for x in range(1,31):
-#
-#     a = df[str(x)].value_counts()
-#
+
 print(a)
-print(df['new_column'])
 
 # a.plot()
 # plt.show()
+
+#1=87
+#2=67,88,80,12
+#3=23,13,3,8
+#4=44,1,62,89
+#5=59
+#6=40
