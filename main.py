@@ -3,13 +3,14 @@ from bs4 import BeautifulSoup
 import pandas
 import csv
 
-file = open("stoloto.csv", "w")
-file.truncate()
-file.close()
+# file = open("stoloto.csv", "w")
+# file.truncate()
+# file.close()
 
 count = 0  # "счетчик для заголовка"
 
-for num in range(891, 1460):
+#891, 1460
+for num in range(1461, 1464):
 
     url = f'https://www.stoloto.ru/ruslotto/archive/{num}'
     r = requests.get(url)
