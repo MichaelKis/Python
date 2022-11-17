@@ -10,7 +10,7 @@ import csv
 count = 0  # "счетчик для заголовка"
 
 #891, 1460
-for num in range(1461, 1464):
+for num in range(1463, 1467):
 
     url = f'https://www.stoloto.ru/ruslotto/archive/{num}'
     r = requests.get(url)
