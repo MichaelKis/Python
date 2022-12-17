@@ -10,7 +10,7 @@ import csv
 count = 0  # "счетчик для заголовка"
 
 #891, 1460
-for num in range(1463, 1467):
+for num in range(1467, 1469):
 
     url = f'https://www.stoloto.ru/ruslotto/archive/{num}'
     r = requests.get(url)
@@ -36,6 +36,7 @@ for num in range(1463, 1467):
                       '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80',
                       '81', '82', '83', '84', '85', '86', '87', '88', '89', '90']
         writer = csv.DictWriter(file, fieldnames=fieldnames, delimiter=',', quoting=csv.QUOTE_ALL)
+
         if count < 2:
             writer.writeheader()
         writer = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
